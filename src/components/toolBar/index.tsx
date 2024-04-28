@@ -6,22 +6,24 @@ import Divider from "@material-ui/core/Divider";
 import ThickSelector from "./thickSelector";
 import ColorPanel from "./colorPanel";
 import OtherOperator from "./other";
+import StorageComponent from "./storage";
 
 const Toolbar = (): JSX.Element => {
-    return (
-        <div className="toolbar">
-            <ToolPanel className="toolbar-item" />
-            <Divider className="divider" orientation="vertical" flexItem />
-            <ShapePanel className="toolbar-item" />
-            <Divider className="divider" orientation="vertical" flexItem />
-            <ThickSelector className="toolbar-item" />
-            <Divider className="divider" orientation="vertical" flexItem />
-            <ColorPanel className="toolbar-item" />
-            <Divider className="divider" orientation="vertical" flexItem />
-            <OtherOperator />
-            <Divider className="divider" orientation="vertical" flexItem />
-        </div>
-    );
+  return (
+    <div className="toolbar">
+      <ToolPanel className="toolbar-item" />
+      <Divider className="divider" orientation="vertical" flexItem />
+      <ShapePanel className="toolbar-item" />
+      <Divider className="divider" orientation="vertical" flexItem />
+      <ThickSelector className="toolbar-item" />
+      <Divider className="divider" orientation="vertical" flexItem />
+      <ColorPanel className="toolbar-item" />
+      <Divider className="divider" orientation="vertical" flexItem />
+      <OtherOperator />
+      <Divider className="divider" orientation="vertical" flexItem />
+      <StorageComponent />
+    </div>
+  );
 };
 
 export default Toolbar;
